@@ -1,857 +1,995 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
     <title>하늘투어S</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/b55b7dbe7f.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b55b7dbe7f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <div class="part1">
-            <a href="하늘투어S.html"><img src="images/airplane.png" alt="logo" class="logoimg"></a>
-            <a href="하늘투어S.html">하늘투어</a>
+      <div class="part1">
+        <a href="하늘투어S.html"
+          ><img src="images/airplane.png" alt="logo" class="logoimg"
+        /></a>
+        <a href="하늘투어S.html">하늘투어</a>
+      </div>
+      <form action="action.php" class="search-form">
+        <input type="text" placeholder="검색어를 입력해 주세요" />
+        <div class="sub_search">
+          <span>추천검색어</span>
+          <div class="reco">
+            <button id="bt1">
+              <a href="#"
+                >#국내 입국전 코로나 검사해제! 가격대별 동남아 여행!</a
+              >
+            </button>
+            <button id="bt2"><a href="#">#출발확정 유럽여행</a></button>
+            <button id="bt3"><a href="#">#드디어 떠나는 일본</a></button>
+          </div>
+          <span>인기검색어</span>
+          <div class="popul">
+            <ol style="list-style-type: decimal">
+              <li>일본</li>
+              <li>괌</li>
+              <li>다낭</li>
+              <li>에어텔</li>
+              <li>스위스</li>
+              <li>터키</li>
+              <li>몽골</li>
+              <li>사이판</li>
+              <li>하와이</li>
+              <li>도쿄</li>
+            </ol>
+          </div>
+          <div class="close"><button>닫기</button></div>
         </div>
-        <form action="action.php" class="search-form">
-            <input type="text" placeholder="검색어를 입력해 주세요">
-                <div class="sub_search">
-                    <span>추천검색어</span>
-                    <div class="reco">
-                        <button id="bt1"><a href="#">#국내 입국전 코로나 검사해제! 가격대별 동남아 여행!</a></button>
-                        <button id="bt2"><a href="#">#출발확정 유럽여행</a></button>
-                        <button id="bt3"><a href="#">#드디어 떠나는 일본</a></button>
-                    </div>
-                    <span>인기검색어</span>
-                    <div class="popul">
-                        <ol style="list-style-type: decimal;"> 
-                            <li>일본</li>
-                            <li>괌</li>
-                            <li>다낭</li>
-                            <li>에어텔</li>
-                            <li>스위스</li>
-                            <li>터키</li>
-                            <li>몽골</li>
-                            <li>사이판</li>
-                            <li>하와이</li>
-                            <li>도쿄</li>
-                        </ol>
-                    </div>
-                    <div class="close"><button>닫기</button></div>
-                </div>
-            <img src="images/3844432_magnifier_search_zoom_icon.png" alt="search" id="search">
-        </form>
-    
-    <div class="part2">
+        <img
+          src="images/3844432_magnifier_search_zoom_icon.png"
+          alt="search"
+          id="search"
+        />
+      </form>
+
+      <div class="part2">
         <div class="cls001">
-            <a href="#">
-                <img src="images/user.png" alt="user"> 
-                <span>마이메뉴</span>
-            </a>
-            <div class="mymenu">
-                <form action="login.php">
-                    <button class="login">로그인</button>
-                    <button class="signup">회원가입</button>
-                </form>
-            </div> 
+          <a href="#">
+            <img src="images/user.png" alt="user" />
+            <span>마이메뉴</span>
+          </a>
+          <div class="mymenu">
+            <form action="login.php">
+              <button class="login">로그인</button>
+              <button class="signup">회원가입</button>
+            </form>
+          </div>
         </div>
         <div class="cls002">
-            <a href="#"><img src="images/online-booking.png" alt="book"> 
-            <span>예약내역</span></a>
+          <a href="#"
+            ><img src="images/online-booking.png" alt="book" />
+            <span>예약내역</span></a
+          >
         </div>
         <div class="cls002">
-            <a href="#"><img src="images/heart.png" alt="heart"> 
-            <span>찜</span></a>
+          <a href="#"
+            ><img src="images/heart.png" alt="heart" /> <span>찜</span></a
+          >
         </div>
-    </div>
+      </div>
     </header>
-
-
 
     <!-- 여기서부터 menu -->
     <nav>
-        <div class="main">
-            <ul class="main-menu">
-                <li>
-                    <a href="#">해외여행</a>
-                    <div class="subdiv">
-                        <div class="sub-content">
-                            <ul class="sub-menu">
-                                <li class="sub-li">
-                                    <a href="#">동남아/대만/서남아</a>
-                                    <div class="lastdiv">
-                                        <div class="last-content">
-                                            <ul class="last-menu">
-                                                <p class="menu-p">태국</p>
-                                                <li><a href="#">방콕</a></li>
-                                                <li><a href="#">파타야</a></li>
-                                                <li><a href="#">푸껫/끄라비</a></li>
-                                                <li><a href="#">치앙마이</a></li>
-                                                <li><a href="#">아유타야</a></li>
-                                                <li><a href="#">카오야이</a></li>
-                                                <li><a href="#">칸차나부리</a></li>
-                                                <li><a href="#">코사무이</a></li>
-                                                <p class="menu-p">싱가포르</p>
-                                                <p class="menu-p">몰디브</p>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">필리핀</p>
-                                                <li><a href="#">보라카이</a></li>
-                                                <li><a href="#">세부</a></li>
-                                                <li><a href="#">보홀</a></li>
-                                                <li><a href="#">마닐라</a></li>
-                                                <li><a href="#">클락</a></li>
-                                                <li><a href="#">팔라완</a></li>
-                                                <p class="menu-p">베트남</p>
-                                                <li><a href="#">다낭</a></li>
-                                                <li><a href="#">나트랑</a></li>
-                                                <li><a href="#">푸꾸옥</a></li>
-                                                <li><a href="#">하롱베이</a></li>
-                                                <li><a href="#">하노이</a></li>
-                                                <li><a href="#">사파</a></li>
-                                                <li><a href="#">호치민/판티엣(무이네)</a></li>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">캄보디아</p>
-                                                <li><a href="#">씨엠립(앙코르왓)</a></li>
-                                                <li><a href="#">바탐방</a></li>
-                                                <p class="menu-p">말레이시아</p>
-                                                <li><a href="#">코타키나발루</a></li>
-                                                <li><a href="#">쿠알라룸프르</a></li>
-                                                <p class="menu-p">인도네시아</p>
-                                                <li><a href="#">발리</a></li>
-                                                <p class="menu-p">라오스</p>
-                                                <li><a href="#">방비엥</a></li>
-                                                <li><a href="#">루앙프라방</a></li>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">대만</p>
-                                                <li><a href="#">타이베이</a></li>
-                                                <li><a href="#">타이중</a></li>
-                                                <li><a href="#">가오슝</a></li>
-                                                <li><a href="#">컨딩</a></li>
-                                                <p class="menu-p">인도</p>
-                                                <p class="menu-p">스리랑카</p>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="sub-li">
-                                    <a href="#">괌/사이판/호주/뉴질랜드</a>
-                                    <div class="lastdiv">
-                                        <div class="last-content">
-                                            <ul class="last-menu">
-                                                <p class="menu-p">괌</p>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">사이판</p>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">호주</p>
-                                                <li><a href="#">시드니</a></li>
-                                                <li><a href="#">멜버른</a></li>
-                                                <li><a href="#">골드코스트</a></li>
-                                                <li><a href="#">브리즈번</a></li>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">뉴질랜드</p>
-                                                <li><a href="#">오클랜드</a></li>
-                                                <li><a href="#">로토투아</a></li>
-                                                <li><a href="#">크라이스트처치</a></li>
-                                                <li><a href="#">퀸즈타운</a></li>
-                                                <p class="menu-p">호주+뉴질랜드</p>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>        
-                                <li class="sub-li">
-                                    <a href="#">유럽/아프리카</a>
-                                    <div class="lastdiv">
-                                        <div class="last-content">
-                                            <ul class="last-menu">
-                                                <p class="menu-p">서유럽</p>
-                                                <li><a href="#">영국</a></li>
-                                                <li><a href="#">스위스</a></li>
-                                                <li><a href="#">이탈리아</a></li>
-                                                <li><a href="#">프랑스</a></li>
-                                                <li><a href="#">남프랑스</a></li>
-                                                <li><a href="#">독일</a></li>
-                                                <li><a href="#">아일랜드</a></li>
-                                                <li><a href="#">네덜란드</a></li>
-                                                <li><a href="#">벨기에</a></li>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">동유럽</p>
-                                                <li><a href="#">오스트리아</a></li>
-                                                <li><a href="#">체코</a></li>
-                                                <li><a href="#">헝가리</a></li>
-                                                <p class="menu-p">발칸</p>
-                                                <li><a href="#">크로아티아</a></li>
-                                                <li><a href="#">슬로베니아</a></li>
-                                                <p class="menu-p">스페인/ 포르투갈</p>
-                                                <li><a href="#">스페인</a></li>
-                                                <li><a href="#">포르투갈</a></li>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">튀르키예(터키)</p>
-                                                <p class="menu-p">그리스/이집트</p>
-                                                <p class="menu-p">코카서스</p>
-                                                <p class="menu-p">중동</p>
-                                                <li><a href="#">두바이</a></li>
-                                                <li><a href="#">이스라엘</a></li>
-                                                <li><a href="#">요르단</a></li>
-                                                <li><a href="#">사우디아라비아</a></li>
-                                                <li><a href="#">튀니지</a></li>
-                                                <li><a href="#">카타르</a></li>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">북유럽/발틱</p>
-                                                <li><a href="#">덴마크</a></li>
-                                                <li><a href="#">노르웨이</a></li>
-                                                <li><a href="#">스웨던</a></li>
-                                                <li><a href="#">핀란드</a></li>
-                                                <p class="menu-p">아프리카</p>
-                                                <li><a href="#">케냐</a></li>
-                                                <li><a href="#">남아공</a></li>
-                                                <p class="menu-p">중앙아시아(우주베키스탄)</p>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="sub-li">
-                                    <a href="#">미주/중남미/하와이</a>
-                                    <div class="lastdiv">
-                                        <div class="last-content">
-                                            <ul class="last-menu">
-                                                <p class="menu-p">하와이</p>
-                                                <li><a href="#">호놀를루</a></li>
-                                                <li><a href="#">마우이</a></li>
-                                                <li><a href="#">빅아일랜드</a></li>
-                                                <li><a href="#">카우아이</a></li>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">미국 서부</p>
-                                                <li><a href="#">로스엔젤레스</a></li>
-                                                <li><a href="#">샌프란시스코</a></li>
-                                                <li><a href="#">라스베이거스</a></li>
-                                                <p class="menu-p">시애틀</p>
-                                                <li><a href="#">그랜드캐년</a></li>
-                                                <li><a href="#">옐로스톤</a></li>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">미국동부</p>
-                                                <li><a href="#">뉴욕</a></li>
-                                                <li><a href="#">워싱턴(DC)</a></li>
-                                                <li><a href="#">보스톤</a></li>
-                                                <li><a href="#">필라델피아</a></li>
-                                                <p class="menu-p">미국 중부(텍사스/뉴올리언스)</p>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">캐나다</p>
-                                                <li><a href="#">벤쿠버</a></li>
-                                                <li><a href="#">벤프(로키)</a></li>
-                                                <li><a href="#">나이아가라</a></li>
-                                                <li><a href="#">토론토</a></li>
-                                                <p class="menu-p">퀘벡</p>
-                                                <li><a href="#">옐로나이프(오로라)</a></li>
-                                                <p class="menu-p">중남미</p>
-                                                <li><a href="#">칸쿤</a></li>
-                                                <li><a href="#">남미(페루,브라질,칠레,아르헨티나)</a></li>
-                                                <li><a href="#">남극</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="sub-li">
-                                    <a href="#">일본</a>
-                                    <div class="lastdiv">
-                                        <div class="last-content">
-                                            <ul class="last-menu">
-                                                <p class="menu-p">간토(관동)</p>
-                                                <li><a href="#">도쿄</a></li>
-                                                <li><a href="#">히코네/후지산</a></li>
-                                                <p class="menu-p">간사이(관서)</p>
-                                                <li><a href="#">오사카</a></li>
-                                                <li><a href="#">교토</a></li>
-                                                <li><a href="#">시라하마</a></li>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">규슈</p>
-                                                <li><a href="#">후쿠오카</a></li>
-                                                <li><a href="#">벳부/유후인</a></li>
-                                                <li><a href="#">가고시마</a></li>
-                                                <p class="menu-p">훗카이도</p>
-                                                <li><a href="#">삿포로</a></li>
-                                                <li><a href="#">후라노/비에이</a></li>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">오키나와</p>
-                                                <p class="menu-p">중부/호쿠리쿠</p>
-                                                <li><a href="#">도야마/알펜루트</a></li>
-                                                <li><a href="#">나고야</a></li>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">주고쿠(요나고)</p>
-                                                <p class="menu-p">시코쿠(나오시마)</p>
-                                                <p class="menu-p">도호쿠(아오모리)</p>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="sub-li">
-                                    <a href="#">중국/홍콩/몽골/중앙아시아</a>
-                                    <div class="lastdiv">
-                                        <div class="last-content">
-                                            <ul class="last-menu">
-                                                <p class="menu-p">중국 중부</p>
-                                                <li><a href="#">장가계</a></li>
-                                                <p class="menu-p">중국 북부</p>
-                                                <li><a href="#">내몽고(호화호특)</a></li>
-                                                <p class="menu-p">중국 남부</p>
-                                                <li><a href="#">계림</a></li>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">중국 서북</p>
-                                                <li><a href="#">서안</a></li>
-                                                <p class="menu-p">중국 서남</p>
-                                                <li><a href="#">곤명</a></li>
-                                                <li><a href="#">여강</a></li>
-                                                <li><a href="#">성도(구채구)</a></li>
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">몽골</p>
-                                                <p class="menu-p">홍콩</p>
-                                                <p class="menu-p">마카오</p>
-                                                
-                                            </ul>
-                                            <ul class="last-menu">
-                                                <p class="menu-p">우주베키스탄(타슈켄트)</p>
-                                                <p class="menu-p">카자흐스탄(알마티)</p>
-                                                <p class="menu-p">키르기스스탄(비슈케크)</p>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                    </div>    
-                </div>
-                    </li> 
-                    <li>
-                        <a href="#">제주/국내여행</a>
-                        <div class="subdiv">
-                            <div class="sub-content">
-                                <ul class="sub-menu">
-                                    <li class="sub-li">
-                                        <a href="#">제주/국내여행</a>
-                                        <div class="lastdiv">
-                                            <div class="last-content">
-                                                <ul class="last-menu">
-                                                    <p class="menu-p">제주도</p>
-                                                    <p class="menu-p">경상남도</p>
-                                                    <p class="menu-p">충청남도</p>
-                                                </ul>
-                                                <ul class="last-menu">
-                                                    <p class="menu-p">부산</p>
-                                                    <p class="menu-p">경상북도</p>
-                                                    <p class="menu-p">충청북도</p>
-                                                </ul>
-                                                <ul class="last-menu">
-                                                    <p class="menu-p">강원도</p>
-                                                    <p class="menu-p">전라남도</p>
-                                                    <p class="menu-p">인천</p>
-                                                </ul>
-                                                <ul class="last-menu">
-                                                    <p class="menu-p">서울</p>
-                                                    <p class="menu-p">전라북도</p>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="sub-li">
-                                        <a href="#">제주렌터카</a>
-                                    </li>        
-                                    <li class="sub-li">
-                                        <a href="#">울릉도</a>
-                                        <div class="lastdiv">
-                                            <div class="last-content">
-                                                <ul class="last-menu3">
-                                                    <p class="menu-p">강릉/묵호항</p>
-                                                </ul>
-                                                <ul class="last-menu3">
-                                                    <p class="menu-p">포항영일만</p>
-                                                </ul>
-                                                <ul class="last-menu3">
-                                                    <p class="menu-p">포항항/후포항</p>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="sub-li">
-                                        <a href="#">내나라여행</a>
-                                    </li>
-                                    <li class="sub-li">
-                                        <a href="#">국내골프</a>
-                                    </li>
-                                    <li class="sub-li">
-                                        <a href="#">단독여행문의</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>            
-                    <li>
-                        <a href="#">항공</a>
-                    </li>
-                    <li>
-                        <a href="#">호텔/펜션</a>
-                        <div class="subdiv">
-                            <div class="sub-content">
-                                <ul class="sub-menu">
-                                    <li class="sub-li">
-                                        <a href="#">호텔예약</a>
-                                    </li>
-                                    <li class="sub-li">
-                                        <a href="#">펜션/풀빌라예약</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+      <div class="main">
+        <ul class="main-menu">
+          <li>
+            <a href="#">해외여행</a>
+            <div class="subdiv">
+              <div class="sub-content">
+                <ul class="sub-menu">
+                  <li class="sub-li">
+                    <a href="#">동남아/대만/서남아</a>
+                    <div class="lastdiv">
+                      <div class="last-content">
+                        <ul class="last-menu">
+                          <p class="menu-p">태국</p>
+                          <li><a href="#">방콕</a></li>
+                          <li><a href="#">파타야</a></li>
+                          <li><a href="#">푸껫/끄라비</a></li>
+                          <li><a href="#">치앙마이</a></li>
+                          <li><a href="#">아유타야</a></li>
+                          <li><a href="#">카오야이</a></li>
+                          <li><a href="#">칸차나부리</a></li>
+                          <li><a href="#">코사무이</a></li>
+                          <p class="menu-p">싱가포르</p>
+                          <p class="menu-p">몰디브</p>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">필리핀</p>
+                          <li><a href="#">보라카이</a></li>
+                          <li><a href="#">세부</a></li>
+                          <li><a href="#">보홀</a></li>
+                          <li><a href="#">마닐라</a></li>
+                          <li><a href="#">클락</a></li>
+                          <li><a href="#">팔라완</a></li>
+                          <p class="menu-p">베트남</p>
+                          <li><a href="#">다낭</a></li>
+                          <li><a href="#">나트랑</a></li>
+                          <li><a href="#">푸꾸옥</a></li>
+                          <li><a href="#">하롱베이</a></li>
+                          <li><a href="#">하노이</a></li>
+                          <li><a href="#">사파</a></li>
+                          <li><a href="#">호치민/판티엣(무이네)</a></li>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">캄보디아</p>
+                          <li><a href="#">씨엠립(앙코르왓)</a></li>
+                          <li><a href="#">바탐방</a></li>
+                          <p class="menu-p">말레이시아</p>
+                          <li><a href="#">코타키나발루</a></li>
+                          <li><a href="#">쿠알라룸프르</a></li>
+                          <p class="menu-p">인도네시아</p>
+                          <li><a href="#">발리</a></li>
+                          <p class="menu-p">라오스</p>
+                          <li><a href="#">방비엥</a></li>
+                          <li><a href="#">루앙프라방</a></li>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">대만</p>
+                          <li><a href="#">타이베이</a></li>
+                          <li><a href="#">타이중</a></li>
+                          <li><a href="#">가오슝</a></li>
+                          <li><a href="#">컨딩</a></li>
+                          <p class="menu-p">인도</p>
+                          <p class="menu-p">스리랑카</p>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sub-li">
+                    <a href="#">괌/사이판/호주/뉴질랜드</a>
+                    <div class="lastdiv">
+                      <div class="last-content">
+                        <ul class="last-menu">
+                          <p class="menu-p">괌</p>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">사이판</p>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">호주</p>
+                          <li><a href="#">시드니</a></li>
+                          <li><a href="#">멜버른</a></li>
+                          <li><a href="#">골드코스트</a></li>
+                          <li><a href="#">브리즈번</a></li>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">뉴질랜드</p>
+                          <li><a href="#">오클랜드</a></li>
+                          <li><a href="#">로토투아</a></li>
+                          <li><a href="#">크라이스트처치</a></li>
+                          <li><a href="#">퀸즈타운</a></li>
+                          <p class="menu-p">호주+뉴질랜드</p>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sub-li">
+                    <a href="#">유럽/아프리카</a>
+                    <div class="lastdiv">
+                      <div class="last-content">
+                        <ul class="last-menu">
+                          <p class="menu-p">서유럽</p>
+                          <li><a href="#">영국</a></li>
+                          <li><a href="#">스위스</a></li>
+                          <li><a href="#">이탈리아</a></li>
+                          <li><a href="#">프랑스</a></li>
+                          <li><a href="#">남프랑스</a></li>
+                          <li><a href="#">독일</a></li>
+                          <li><a href="#">아일랜드</a></li>
+                          <li><a href="#">네덜란드</a></li>
+                          <li><a href="#">벨기에</a></li>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">동유럽</p>
+                          <li><a href="#">오스트리아</a></li>
+                          <li><a href="#">체코</a></li>
+                          <li><a href="#">헝가리</a></li>
+                          <p class="menu-p">발칸</p>
+                          <li><a href="#">크로아티아</a></li>
+                          <li><a href="#">슬로베니아</a></li>
+                          <p class="menu-p">스페인/ 포르투갈</p>
+                          <li><a href="#">스페인</a></li>
+                          <li><a href="#">포르투갈</a></li>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">튀르키예(터키)</p>
+                          <p class="menu-p">그리스/이집트</p>
+                          <p class="menu-p">코카서스</p>
+                          <p class="menu-p">중동</p>
+                          <li><a href="#">두바이</a></li>
+                          <li><a href="#">이스라엘</a></li>
+                          <li><a href="#">요르단</a></li>
+                          <li><a href="#">사우디아라비아</a></li>
+                          <li><a href="#">튀니지</a></li>
+                          <li><a href="#">카타르</a></li>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">북유럽/발틱</p>
+                          <li><a href="#">덴마크</a></li>
+                          <li><a href="#">노르웨이</a></li>
+                          <li><a href="#">스웨던</a></li>
+                          <li><a href="#">핀란드</a></li>
+                          <p class="menu-p">아프리카</p>
+                          <li><a href="#">케냐</a></li>
+                          <li><a href="#">남아공</a></li>
+                          <p class="menu-p">중앙아시아(우주베키스탄)</p>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sub-li">
+                    <a href="#">미주/중남미/하와이</a>
+                    <div class="lastdiv">
+                      <div class="last-content">
+                        <ul class="last-menu">
+                          <p class="menu-p">하와이</p>
+                          <li><a href="#">호놀를루</a></li>
+                          <li><a href="#">마우이</a></li>
+                          <li><a href="#">빅아일랜드</a></li>
+                          <li><a href="#">카우아이</a></li>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">미국 서부</p>
+                          <li><a href="#">로스엔젤레스</a></li>
+                          <li><a href="#">샌프란시스코</a></li>
+                          <li><a href="#">라스베이거스</a></li>
+                          <p class="menu-p">시애틀</p>
+                          <li><a href="#">그랜드캐년</a></li>
+                          <li><a href="#">옐로스톤</a></li>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">미국동부</p>
+                          <li><a href="#">뉴욕</a></li>
+                          <li><a href="#">워싱턴(DC)</a></li>
+                          <li><a href="#">보스톤</a></li>
+                          <li><a href="#">필라델피아</a></li>
+                          <p class="menu-p">미국 중부(텍사스/뉴올리언스)</p>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">캐나다</p>
+                          <li><a href="#">벤쿠버</a></li>
+                          <li><a href="#">벤프(로키)</a></li>
+                          <li><a href="#">나이아가라</a></li>
+                          <li><a href="#">토론토</a></li>
+                          <p class="menu-p">퀘벡</p>
+                          <li><a href="#">옐로나이프(오로라)</a></li>
+                          <p class="menu-p">중남미</p>
+                          <li><a href="#">칸쿤</a></li>
+                          <li>
+                            <a href="#">남미(페루,브라질,칠레,아르헨티나)</a>
+                          </li>
+                          <li><a href="#">남극</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sub-li">
+                    <a href="#">일본</a>
+                    <div class="lastdiv">
+                      <div class="last-content">
+                        <ul class="last-menu">
+                          <p class="menu-p">간토(관동)</p>
+                          <li><a href="#">도쿄</a></li>
+                          <li><a href="#">히코네/후지산</a></li>
+                          <p class="menu-p">간사이(관서)</p>
+                          <li><a href="#">오사카</a></li>
+                          <li><a href="#">교토</a></li>
+                          <li><a href="#">시라하마</a></li>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">규슈</p>
+                          <li><a href="#">후쿠오카</a></li>
+                          <li><a href="#">벳부/유후인</a></li>
+                          <li><a href="#">가고시마</a></li>
+                          <p class="menu-p">훗카이도</p>
+                          <li><a href="#">삿포로</a></li>
+                          <li><a href="#">후라노/비에이</a></li>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">오키나와</p>
+                          <p class="menu-p">중부/호쿠리쿠</p>
+                          <li><a href="#">도야마/알펜루트</a></li>
+                          <li><a href="#">나고야</a></li>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">주고쿠(요나고)</p>
+                          <p class="menu-p">시코쿠(나오시마)</p>
+                          <p class="menu-p">도호쿠(아오모리)</p>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sub-li">
+                    <a href="#">중국/홍콩/몽골/중앙아시아</a>
+                    <div class="lastdiv">
+                      <div class="last-content">
+                        <ul class="last-menu">
+                          <p class="menu-p">중국 중부</p>
+                          <li><a href="#">장가계</a></li>
+                          <p class="menu-p">중국 북부</p>
+                          <li><a href="#">내몽고(호화호특)</a></li>
+                          <p class="menu-p">중국 남부</p>
+                          <li><a href="#">계림</a></li>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">중국 서북</p>
+                          <li><a href="#">서안</a></li>
+                          <p class="menu-p">중국 서남</p>
+                          <li><a href="#">곤명</a></li>
+                          <li><a href="#">여강</a></li>
+                          <li><a href="#">성도(구채구)</a></li>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">몽골</p>
+                          <p class="menu-p">홍콩</p>
+                          <p class="menu-p">마카오</p>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">우주베키스탄(타슈켄트)</p>
+                          <p class="menu-p">카자흐스탄(알마티)</p>
+                          <p class="menu-p">키르기스스탄(비슈케크)</p>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">제주/국내여행</a>
+            <div class="subdiv">
+              <div class="sub-content">
+                <ul class="sub-menu">
+                  <li class="sub-li">
+                    <a href="#">제주/국내여행</a>
+                    <div class="lastdiv">
+                      <div class="last-content">
+                        <ul class="last-menu">
+                          <p class="menu-p">제주도</p>
+                          <p class="menu-p">경상남도</p>
+                          <p class="menu-p">충청남도</p>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">부산</p>
+                          <p class="menu-p">경상북도</p>
+                          <p class="menu-p">충청북도</p>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">강원도</p>
+                          <p class="menu-p">전라남도</p>
+                          <p class="menu-p">인천</p>
+                        </ul>
+                        <ul class="last-menu">
+                          <p class="menu-p">서울</p>
+                          <p class="menu-p">전라북도</p>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sub-li">
+                    <a href="#">제주렌터카</a>
+                  </li>
+                  <li class="sub-li">
+                    <a href="#">울릉도</a>
+                    <div class="lastdiv">
+                      <div class="last-content">
+                        <ul class="last-menu3">
+                          <p class="menu-p">강릉/묵호항</p>
+                        </ul>
+                        <ul class="last-menu3">
+                          <p class="menu-p">포항영일만</p>
+                        </ul>
+                        <ul class="last-menu3">
+                          <p class="menu-p">포항항/후포항</p>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sub-li">
+                    <a href="#">내나라여행</a>
+                  </li>
+                  <li class="sub-li">
+                    <a href="#">국내골프</a>
+                  </li>
+                  <li class="sub-li">
+                    <a href="#">단독여행문의</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
 
-                    </li>
-                    <li><a href="#">투어/입장권</a></li>
-            </ul>
-        </div>
+          <li>
+            <a href="#">항공</a>
+          </li>
+          <li>
+            <a href="#">호텔/펜션</a>
+            <div class="subdiv">
+              <div class="sub-content">
+                <ul class="sub-menu">
+                  <li class="sub-li">
+                    <a href="#">호텔예약</a>
+                  </li>
+                  <li class="sub-li">
+                    <a href="#">펜션/풀빌라예약</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">투어/입장권</a></li>
+        </ul>
+      </div>
     </nav>
     <div class="banner1">
-        <div class="banner-content">
-            <ul class="fir-ul">
-                <p class="bn-p"><span class="bn-sp">고객님,</span><br> 어떤 여행을 꿈꾸시나요? </p>
-                <li>
-                    <input type="radio" name="tabs" id="tab1" checked>
-                    <label for="tab1">패키지</label>
-                    <div id="tab-content1" class="content">
-                        <form action="package.php" class="ye-form">
-                            <input type="text" placeholder="어디로 떠나세요?" class="input-start">
-                            <select name="start" id="start">
-                                <option value="seoul" selected>서울(인천/김포)</option>
-                                <option value="busan">부산</option>
-                                <option value="daegu">대구</option>
-                                <option value="cheongju">청주</option>
-                                <option value="gwangju">광주</option>
-                                <option value="jeju">제주</option>
-                                <option value="yangyang">양양</option>
-                                <option value="kangwon">강원</option>
-                            </select>
-                            <input type="date" class="input-date">
-                            <button class="btn01">패키지 검색</button>
-                        </form>
-                    </div>
-                </li>
-                <li class="two">
-                    <input type="radio" name="tabs" id="tab2">
-                    <label for="tab2">항공</label>
-                    <div id="tab-content2" class="content">
-                        <a href="#air-w">왕복</a>
-                        <a href="#air-p">편도</a>
-                        <a href="#air-d">다구간</a>
-                        <div id="air-w">
-                            <form action="wang">
-                                <input type="text" placeholder="인천/김포" class="input01">
-                                <input type="text" placeholder="도착지" class="input01">
-                                <input type="date" class="air-date">
-                                <input type="date" class="air-date">
-                                <input type="submit" value="성인1명 일반석" class="submit">
-                                <div class="jik">직항</div>
-                                <button class="btn01">항공권 검색</button>
-                            </form>
-                        </div>
-                        <div id="air-p">
-                            <form action="wang" class="ye-form">
-                                <input type="text" placeholder="인천/김포" class="input01">
-                                <input type="text" placeholder="도착지" class="input01">
-                                <input type="date" class="air-date1">
-                                <input type="submit" value="성인1명 일반석" class="submit">
-                                <div class="jik">직항</div>
-                                <button class="btn01">항공권 검색</button>
-                            </form>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="tabs" id="tab3">
-                    <label for="tab3">호텔</label>
-                    <div id="tab-content3" class="content">
-                        <form action="hotel" class="ye-form">
-                            <input type="text" placeholder="어디로 떠나세요?" class="input-start">
-                            <input type="date" class="ho-01">
-                            <input type="submit" value="객실1 성인 2명" class="ho-02">
-                            <button class="btn01">숙소 검색</button>
-                        </form>
-                    </div>
-                </li>
-            </ul>
-            <div class="ban-img">
-                <img src="images/banner6.jpg" alt="">
+      <div class="banner-content">
+        <ul class="fir-ul">
+          <p class="bn-p">
+            <span class="bn-sp">고객님,</span><br />
+            어떤 여행을 꿈꾸시나요?
+          </p>
+          <li>
+            <input type="radio" name="tabs" id="tab1" checked />
+            <label for="tab1">패키지</label>
+            <div id="tab-content1" class="content">
+              <form action="package.php" class="ye-form">
+                <input
+                  type="text"
+                  placeholder="어디로 떠나세요?"
+                  class="input-start"
+                />
+                <select name="start" id="start">
+                  <option value="seoul" selected>서울(인천/김포)</option>
+                  <option value="busan">부산</option>
+                  <option value="daegu">대구</option>
+                  <option value="cheongju">청주</option>
+                  <option value="gwangju">광주</option>
+                  <option value="jeju">제주</option>
+                  <option value="yangyang">양양</option>
+                  <option value="kangwon">강원</option>
+                </select>
+                <input type="date" class="input-date" />
+                <button class="btn01">패키지 검색</button>
+              </form>
             </div>
+          </li>
+          <li class="two">
+            <input type="radio" name="tabs" id="tab2" />
+            <label for="tab2">항공</label>
+            <div id="tab-content2" class="content">
+              <a href="#air-w">왕복</a>
+              <a href="#air-p">편도</a>
+              <a href="#air-d">다구간</a>
+              <div id="air-w">
+                <form action="wang">
+                  <input type="text" placeholder="인천/김포" class="input01" />
+                  <input type="text" placeholder="도착지" class="input01" />
+                  <input type="date" class="air-date" />
+                  <input type="date" class="air-date" />
+                  <input type="submit" value="성인1명 일반석" class="submit" />
+                  <div class="jik">직항</div>
+                  <button class="btn01">항공권 검색</button>
+                </form>
+              </div>
+              <div id="air-p">
+                <form action="wang" class="ye-form">
+                  <input type="text" placeholder="인천/김포" class="input01" />
+                  <input type="text" placeholder="도착지" class="input01" />
+                  <input type="date" class="air-date1" />
+                  <input type="submit" value="성인1명 일반석" class="submit" />
+                  <div class="jik">직항</div>
+                  <button class="btn01">항공권 검색</button>
+                </form>
+              </div>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="tabs" id="tab3" />
+            <label for="tab3">호텔</label>
+            <div id="tab-content3" class="content">
+              <form action="hotel" class="ye-form">
+                <input
+                  type="text"
+                  placeholder="어디로 떠나세요?"
+                  class="input-start"
+                />
+                <input type="date" class="ho-01" />
+                <input type="submit" value="객실1 성인 2명" class="ho-02" />
+                <button class="btn01">숙소 검색</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+        <div class="ban-img">
+          <img src="images/banner6.jpg" alt="" />
         </div>
+      </div>
     </div>
 
     <!-- 여기서부터 section1 -->
 
     <div id="hy1">
-        <h1>이 달의 추천 여행지</h1>
+      <h1>이 달의 추천 여행지</h1>
 
-        <div class="C01">
-            <img class="c01-1" src="images/0C.jpg" alt="코타키나발루">
-            <p class="c01-2 c01-3">코타키나발루</p>
-        </div>
+      <div class="C01">
+        <img class="c01-1" src="images/0C.jpg" alt="코타키나발루" />
+        <p class="c01-2 c01-3">코타키나발루</p>
+      </div>
 
-        <div class="C01">
-            <img class="c01-1" src="images/0D.jpg" alt="다낭">
-            <p class="c01-2">다낭</p>
-        </div>
+      <div class="C01">
+        <img class="c01-1" src="images/0D.jpg" alt="다낭" />
+        <p class="c01-2">다낭</p>
+      </div>
 
-        <div class="C01"> 
-            <img class="c01-1" src="images/0G.jpg" alt="괌">
-            <p class="c01-2">괌</p>
-        </div>
+      <div class="C01">
+        <img class="c01-1" src="images/0G.jpg" alt="괌" />
+        <p class="c01-2">괌</p>
+      </div>
 
-        <div class="C01">
-            <img class="c01-1" src="images/0S.jpg" alt="사이판">
-            <p class="c01-2">사이판</p>
-        </div>
+      <div class="C01">
+        <img class="c01-1" src="images/0S.jpg" alt="사이판" />
+        <p class="c01-2">사이판</p>
+      </div>
 
-        <div class="C01">
-            <img class="c01-1" src="images/0T.jpg" alt="터키">
-            <p class="c01-2">터키</p>
-        </div>
+      <div class="C01">
+        <img class="c01-1" src="images/0T.jpg" alt="터키" />
+        <p class="c01-2">터키</p>
+      </div>
     </div>
-
-
 
     <!-- 여기서부터 section2 -->
     <div id="hy2">
-        <img class="air" src="images/000.jpg" alt="배경">
-        <h1>해외여행 특가</h1>
-        <h2>일본 / 유럽 / 동남아</h2>
-        
-        <ul>
-            <li class="japan01">
+      <img class="air" src="images/000.jpg" alt="배경" />
+      <h1>해외여행 특가</h1>
+      <h2>일본 / 유럽 / 동남아</h2>
 
-                <input type="radio" name="button" id="b01" checked="">
-                <label class="radio-1" for="b01">일본 자유여행 특가상품</label>
+      <ul>
+        <li class="japan01">
+          <input type="radio" name="button" id="b01" checked="" />
+          <label class="radio-1" for="b01">일본 자유여행 특가상품</label>
 
-                <div class="jp01">
-                    <img src="images/J-01.jpg" alt="일본01">
-                    <a class="cls-a" href="#"> 오사카 3일 #엑셀도큐호텔</a>
-                    <p class="cls-p01">#왕복항공권 #여행자보험 #어시스트 카드 <br> #시내중심호텔</p>
-                    <p class="cls-p02">339,900원~</p>
-                </div>
+          <div class="jp01">
+            <img src="images/J-01.jpg" alt="일본01" />
+            <a class="cls-a" href="#"> 오사카 3일 #엑셀도큐호텔</a>
+            <p class="cls-p01">
+              #왕복항공권 #여행자보험 #어시스트 카드 <br />
+              #시내중심호텔
+            </p>
+            <p class="cls-p02">339,900원~</p>
+          </div>
 
-                <div class="jp02">
-                    <img src="images/J-02.jpg" alt="일본02">
-                    <a class="cls-a" href="#">도쿄 3일 #이비스스타일즈긴자</a>
-                    <p class="cls-p01">#왕복항공권 #여행자보험 #어시스트 카드 <br> #시내중심호텔</p>
-                    <p class="cls-p02">399,900원~</p>
-                </div>
-           
-                <div class="jp03">
-                    <img src="images/J-03.jpg" alt="일본03">
-                    <a class="cls-a" href="#">규슈 4일 #캐널시티워싱턴호텔</a>
-                    <p class="cls-p01">#왕복항공권 #여행자보험 #어시스트 카드 <br> #후쿠오카시내3박</p>
-                    <p class="cls-p02">449,900원~</p>
-                </div>
-            </li>
-        </ul>
+          <div class="jp02">
+            <img src="images/J-02.jpg" alt="일본02" />
+            <a class="cls-a" href="#">도쿄 3일 #이비스스타일즈긴자</a>
+            <p class="cls-p01">
+              #왕복항공권 #여행자보험 #어시스트 카드 <br />
+              #시내중심호텔
+            </p>
+            <p class="cls-p02">399,900원~</p>
+          </div>
 
-        <ul>
-            <li class="Europe01">
+          <div class="jp03">
+            <img src="images/J-03.jpg" alt="일본03" />
+            <a class="cls-a" href="#">규슈 4일 #캐널시티워싱턴호텔</a>
+            <p class="cls-p01">
+              #왕복항공권 #여행자보험 #어시스트 카드 <br />
+              #후쿠오카시내3박
+            </p>
+            <p class="cls-p02">449,900원~</p>
+          </div>
+        </li>
+      </ul>
 
-                <input type="radio" name="button" id="b02">
-                <label class="radio-2" for="b02">지금 가장 인기있는 유럽</label>
+      <ul>
+        <li class="Europe01">
+          <input type="radio" name="button" id="b02" />
+          <label class="radio-2" for="b02">지금 가장 인기있는 유럽</label>
 
-                <div class="Eu01"> 
-                    <img src="images/E-01.jpg" alt="유럽01">
-                    <p class="pakage">패키지</p>
-                    <a class="cls-a" href="#">튀르키예(터키)일주8,9,10일</a>
-                    <p class="cls-p01">#월드체인호텔 2박 #괴레메 야외박물관 <br> #파묵칼레 온천호텔</p>
-                    <p class="cls-p02">1,199,000원~</p>
-                </div>
-      
-                <div class="Eu02">
-                    <img src="images/E-02.jpg" alt="유럽02">
-                    <p class="pakage">패키지</p>
-                    <a class="cls-a" href="#">스위스/이탈리아 9일</a>
-                    <p class="cls-p01">#나폼소 #피렌체 #베네치아 #스위스 여왕의 산 리기</p>
-                    <p class="cls-p02">2,199,000원~</p>
-                </div>
+          <div class="Eu01">
+            <img src="images/E-01.jpg" alt="유럽01" />
+            <p class="pakage">패키지</p>
+            <a class="cls-a" href="#">튀르키예(터키)일주8,9,10일</a>
+            <p class="cls-p01">
+              #월드체인호텔 2박 #괴레메 야외박물관 <br />
+              #파묵칼레 온천호텔
+            </p>
+            <p class="cls-p02">1,199,000원~</p>
+          </div>
 
-                <div class="Eu03">
-                    <img src="images/E-03.jpg" alt="유럽03">
-                    <p class="pakage">패키지</p>
-                    <a class="cls-a" href="#">[1개국 깊이보기] 스페인 일주 9일</a>
-                    <p class="cls-p01">#5성1박 #전일정4성호텔 #맛10 #마드리드시내호텔1박 #루프탑레스토랑 #플라멩고</p>
-                    <p class="cls-p02">2,499,000원~</p>
-                </div>
-            </li>
-        </ul>
+          <div class="Eu02">
+            <img src="images/E-02.jpg" alt="유럽02" />
+            <p class="pakage">패키지</p>
+            <a class="cls-a" href="#">스위스/이탈리아 9일</a>
+            <p class="cls-p01">
+              #나폼소 #피렌체 #베네치아 #스위스 여왕의 산 리기
+            </p>
+            <p class="cls-p02">2,199,000원~</p>
+          </div>
 
-        <ul>
-            <li class="Southeast-Asia01">
-                <input type="radio" name="button" id="b03">
-                <label class="radio-3" for="b03">동남아 휴양지 특가 모음</label>
+          <div class="Eu03">
+            <img src="images/E-03.jpg" alt="유럽03" />
+            <p class="pakage">패키지</p>
+            <a class="cls-a" href="#">[1개국 깊이보기] 스페인 일주 9일</a>
+            <p class="cls-p01">
+              #5성1박 #전일정4성호텔 #맛10 #마드리드시내호텔1박 #루프탑레스토랑
+              #플라멩고
+            </p>
+            <p class="cls-p02">2,499,000원~</p>
+          </div>
+        </li>
+      </ul>
 
-                    <div class="SA01">
-                        <img src="images/S-01.jpg" alt="동남아01">
-                        <p class="pakage">패키지</p>
-                        <a class="cls-a" href="#">보라카이 4일,5일 #라카멜라 신관</a>
-                        <p class="cls-p01">#전신마사지 #세일링보트 #디몰 #특식2회</p>
-                        <p class="cls-p02">399,000원~</p>
-                    </div>
+      <ul>
+        <li class="Southeast-Asia01">
+          <input type="radio" name="button" id="b03" />
+          <label class="radio-3" for="b03">동남아 휴양지 특가 모음</label>
 
-                    <div class="SA02">
-                        <img src="images/S-02.jpg" alt="동남아02">
-                        <p class="pakage">패키지</p>
-                        <a class="cls-a" href="#">방콕/파타야 5일 #파타야 5성호텔</a>
-                        <p class="cls-p01">#가성비여행 #요트크루즈 #스노클링 #전통마사지</p>
-                        <p class="cls-p02">499,900원~</p>
-                    </div>
+          <div class="SA01">
+            <img src="images/S-01.jpg" alt="동남아01" />
+            <p class="pakage">패키지</p>
+            <a class="cls-a" href="#">보라카이 4일,5일 #라카멜라 신관</a>
+            <p class="cls-p01">#전신마사지 #세일링보트 #디몰 #특식2회</p>
+            <p class="cls-p02">399,000원~</p>
+          </div>
 
-                    <div class="SA03">
-                        <img src="images/S-03.jpg" alt="동남아03">
-                        <div class="SA001">
-                            <p class="pakage">패키지</p>
-                            <a class="cls-a" href="#">코타키나발루 5일,6일 #수트라하버<div class="m">마젤란</div></a>
-                            <p class="cls-p03">#아일랜드투어 #씨뷰룸 업그레이드 #18시 레이트체크아웃</p>
-                            <p class="cls-p04">679,000원~</p>
-                        </div>
-                    </div>
-            </li>
-        </ul>
+          <div class="SA02">
+            <img src="images/S-02.jpg" alt="동남아02" />
+            <p class="pakage">패키지</p>
+            <a class="cls-a" href="#">방콕/파타야 5일 #파타야 5성호텔</a>
+            <p class="cls-p01">#가성비여행 #요트크루즈 #스노클링 #전통마사지</p>
+            <p class="cls-p02">499,900원~</p>
+          </div>
+
+          <div class="SA03">
+            <img src="images/S-03.jpg" alt="동남아03" />
+            <div class="SA001">
+              <p class="pakage">패키지</p>
+              <a class="cls-a" href="#"
+                >코타키나발루 5일,6일 #수트라하버
+                <div class="m">마젤란</div></a
+              >
+              <p class="cls-p03">
+                #아일랜드투어 #씨뷰룸 업그레이드 #18시 레이트체크아웃
+              </p>
+              <p class="cls-p04">679,000원~</p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
     <div id="hy3">
-        <div class="section3">
-            <ul class="hy3-ul">
-                <li class="Golf">
-                
-                    <input type="radio" name="button1" id="b04" checked="">
-                    <label class="radio-4" for="b04"></label>
+      <div class="section3">
+        <ul class="hy3-ul">
+          <li class="Golf">
+            <input type="radio" name="button1" id="b04" checked="" />
+            <label class="radio-4" for="b04"></label>
 
-                    <div class="hy3-back01">
-                        <div class="goo">
-                            <div class="g01">
-                                <img class="Thema-img01" src="images/golf-1.jpg" alt="golf">
-                                <div class="golf-link"><a href="#">하늘투어 아마추어 골프대회 보러가기<i class="fa-solid fa-chevron-right"></i></a></div>
-                            </div>
+            <div class="hy3-back01">
+              <div class="goo">
+                <div class="g01">
+                  <img class="Thema-img01" src="images/golf-1.jpg" alt="golf" />
+                  <div class="golf-link">
+                    <a href="#"
+                      >하늘투어 아마추어 골프대회 보러가기<i
+                        class="fa-solid fa-chevron-right"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
 
-                            <div class="hy3-content1">
-                                <div class="g02">
-                                    <i class="fa-solid fa-golf-ball-tee"></i>
-                                    <p>코로나 이후 업계 최초! 첫번째 해외 골프 대회</p>
-                                </div>
-                    
-                                <p class="golf-p">하늘투어 아마추어 골프대회 IN DANANG</p>
-                    
-                                <div class="g03">
-                                    <p>#하늘투어 22년도 첫 인터내셔널 다낭 대회!</p>
-                                    <p>#골프에 최적화된 일정! 오후 출발 ~ 아침 도착 항공편</p>
-                                    <p>#다낭 공항과 가까우며 시내와 접근성 좋은 호텔</p>
-                                    <p>#대회 당일 전문 사회자 진행 만찬과 시상식 진행</p>
-                                    <p>#다낭관광청/롯데면세점 등 다양한 경품 지급</p>
-                                </div>
-                    
-                                <div class="g04">
-                                    <img class="Thema-img02" src="images/golf-2.jpg" alt="golf">
-                                    <a class="g04-a" href="#">[인천출발] 다낭 골프 5일</a>
-                                    <p class="g04-p1">#18홀*3회 #다낭/바나힐CC #골든베이호텔 #만찬 #시상식</p>
-                                    <p class="g04-p2">1,749,000원~</p>
-                                </div>
-                    
-                                <div class="g05">
-                                    <img class="Thema-img03" src="images/golf-3.jpg" alt="golf">
-                                    <a class="g05-a" href="#">[부산출발] 다낭 골프 5일</a>
-                                    <p class="g05-p1">#18홀*3회 #다낭/바나힐CC #골든베이호텔 #만찬 #시상식</p>
-                                    <p class="g05-p2">1,439,000원~</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+                <div class="hy3-content1">
+                  <div class="g02">
+                    <i class="fa-solid fa-golf-ball-tee"></i>
+                    <p>코로나 이후 업계 최초! 첫번째 해외 골프 대회</p>
+                  </div>
 
-                <li class="Origin">
+                  <p class="golf-p">하늘투어 아마추어 골프대회 IN DANANG</p>
 
-                    <input type="radio" name="button1" id="b05">
-                    <label class="radio-5" for="b05"></label>
+                  <div class="g03">
+                    <p>#하늘투어 22년도 첫 인터내셔널 다낭 대회!</p>
+                    <p>#골프에 최적화된 일정! 오후 출발 ~ 아침 도착 항공편</p>
+                    <p>#다낭 공항과 가까우며 시내와 접근성 좋은 호텔</p>
+                    <p>#대회 당일 전문 사회자 진행 만찬과 시상식 진행</p>
+                    <p>#다낭관광청/롯데면세점 등 다양한 경품 지급</p>
+                  </div>
 
-                    <div class="hy3-back02">
-                        <div class="Ori">
-                            <div class="origin01">
-                                <img class="Thema-img04" src="images/Orignal.jpg" alt="Original">
-                                <div class="origin-link"><a href="#">하늘 투어 Original VOL.04 보러가기<i class="fa-solid fa-chevron-right"></i></a></div>
-                            </div>
+                  <div class="g04">
+                    <img
+                      class="Thema-img02"
+                      src="images/golf-2.jpg"
+                      alt="golf"
+                    />
+                    <a class="g04-a" href="#">[인천출발] 다낭 골프 5일</a>
+                    <p class="g04-p1">
+                      #18홀*3회 #다낭/바나힐CC #골든베이호텔 #만찬 #시상식
+                    </p>
+                    <p class="g04-p2">1,749,000원~</p>
+                  </div>
 
-                            <div class="hy3-content2">
-                                <div class="origin02">
-                                    <i class="fa-solid fa-cloud"></i>
-                                    <p>꿈을 담은 특별한 여행</p>
-                                </div>
+                  <div class="g05">
+                    <img
+                      class="Thema-img03"
+                      src="images/golf-3.jpg"
+                      alt="golf"
+                    />
+                    <a class="g05-a" href="#">[부산출발] 다낭 골프 5일</a>
+                    <p class="g05-p1">
+                      #18홀*3회 #다낭/바나힐CC #골든베이호텔 #만찬 #시상식
+                    </p>
+                    <p class="g05-p2">1,439,000원~</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-                                <p class="origin-p">하늘 Original</p>
+          <li class="Origin">
+            <input type="radio" name="button1" id="b05" />
+            <label class="radio-5" for="b05"></label>
 
-                                <div class="original03">
-                                    <p>꿈을 담은 특별한 여행, 하늘 Original 상품이 궁금하다면?<br>
-                                    하늘 Original 2022년 네 번째 에디션을 만나보세요.<br>
-                                특별한 키워드를 담은 여행들을 소개합니다.</p>
-                                </div>
+            <div class="hy3-back02">
+              <div class="Ori">
+                <div class="origin01">
+                  <img
+                    class="Thema-img04"
+                    src="images/Orignal.jpg"
+                    alt="Original"
+                  />
+                  <div class="origin-link">
+                    <a href="#"
+                      >하늘 투어 Original VOL.04 보러가기<i
+                        class="fa-solid fa-chevron-right"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
 
-                                <div class="original04">
-                                    <p>#교토 이네후에야 수상가옥 #규슈 고양이 테마여행</p>
-                                    <p>#몽골 트레킹 with 하이킹 에반젤리스트 김섬주</p>
-                                    <p>#싱가포르 펍 크롤링</p>
-                                </div>
+                <div class="hy3-content2">
+                  <div class="origin02">
+                    <i class="fa-solid fa-cloud"></i>
+                    <p>꿈을 담은 특별한 여행</p>
+                  </div>
 
-                                <div class="original05">
-                                    <img class="Thema-img05" src="images/original2.jpg" alt="original">
-                                    <a class="o05-a" href="#">교토/이네후나야 3일 #수상가옥숙박 #바다전망카페 #감성피크닉 #루프탑바</a>
-                                    <p class="o05-p1">바다와 맞닿은 작은 마을 수상가옥에서 머무는 하룻밤</p>
-                                    <p class="o05-p2">2,129,900원~</p>
-                                </div>
+                  <p class="origin-p">하늘 Original</p>
 
-                                <div class="original06">
-                                    <img class="Thema-img06" src="images/original3.jpg" alt="original">
-                                    <a class="o06-a" href="#">[하이킹 에반젤리스트 김섬주 동행]<br>몽골 5일 #트레킹 #플로깅 #체체궁산 #엉거츠산</a>
-                                    <p class="o06-p1">몽골 대자연을 지키는 트레킹&플로깅 여행</p>
-                                    <p class="o06-p2">1,749,000원~</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>   
+                  <div class="original03">
+                    <p>
+                      꿈을 담은 특별한 여행, 하늘 Original 상품이 궁금하다면?<br />
+                      하늘 Original 2022년 네 번째 에디션을 만나보세요.<br />
+                      특별한 키워드를 담은 여행들을 소개합니다.
+                    </p>
+                  </div>
+
+                  <div class="original04">
+                    <p>#교토 이네후에야 수상가옥 #규슈 고양이 테마여행</p>
+                    <p>#몽골 트레킹 with 하이킹 에반젤리스트 김섬주</p>
+                    <p>#싱가포르 펍 크롤링</p>
+                  </div>
+
+                  <div class="original05">
+                    <img
+                      class="Thema-img05"
+                      src="images/original2.jpg"
+                      alt="original"
+                    />
+                    <a class="o05-a" href="#"
+                      >교토/이네후나야 3일 #수상가옥숙박 #바다전망카페
+                      #감성피크닉 #루프탑바</a
+                    >
+                    <p class="o05-p1">
+                      바다와 맞닿은 작은 마을 수상가옥에서 머무는 하룻밤
+                    </p>
+                    <p class="o05-p2">2,129,900원~</p>
+                  </div>
+
+                  <div class="original06">
+                    <img
+                      class="Thema-img06"
+                      src="images/original3.jpg"
+                      alt="original"
+                    />
+                    <a class="o06-a" href="#"
+                      >[하이킹 에반젤리스트 김섬주 동행]<br />몽골 5일 #트레킹
+                      #플로깅 #체체궁산 #엉거츠산</a
+                    >
+                    <p class="o06-p1">
+                      몽골 대자연을 지키는 트레킹&플로깅 여행
+                    </p>
+                    <p class="o06-p2">1,749,000원~</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-
 
     <!-- section4 -->
     <div class="section4">
-        <h1>여행후기</h1>
+      <h1>여행후기</h1>
 
-        <div class="review_left">
-            <img src="images/reviews.jpg" alt="코타키나발루">
-        </div>
+      <div class="review_left">
+        <img src="images/reviews.jpg" alt="코타키나발루" />
+      </div>
 
-        <div class="review_right">
-            <a href="#">오키나와 패키지 여행 후기-peak924님</a>
-            <p> 가족여행으로 오키나와를 가기로 계획을 세우고 있었는데 하늘투어에서 특가로 오키나와 패키지를 좋은 기회 좋은 가격에 구해 설레는 여행을 시작했습니다. 첫 가족 해외여행이라 걱정이었는데 가이드분께서 여행계획은 물론 그 이외의 추억들을 오랫동안 간직할 수 있게끔 노력해주시는 모습에...</p>
-            
-            <a href="#">동유럽 풀패키지 여행 후기-ullis3님</a>
-            <p> 전부터 혼자 유럽의 많은 곳곳들을 최대한 많이 돌아다니면서 아름다운 경치들을 만끽하며 멋진 사진들을 찍고 새로운 사람들을 만나는 것이 제 버킷리스트 였습니다. 다른 여행사들의 패키지들을 여러차례 찾아보았지만 항상 아쉬운 루트와 시간 분배가 제 결정을 미루게 했는데 이번에 하늘투어의 동유럽 여행 풀패키지를 보고 만족...</p>
-            
-            <a href="#">코타키나발루 여행 후기-나랑놀아134님</a>
-            <p> 선상에서 바라보는 바다와 노을은 말로 듣고 제가 예상했던 것 그 이상이였어요. 소중한 사람들과 해변에 앉아 이야기를 나누며 노을을 같이 바라볼 수 있다는 사실이 꿈만 같았어요 너무 값진 여행... </p>
-            <div class="more_review">
-                <a href="#"> > 더 많은 여행후기 보러가기</a>
-            </div>
+      <div class="review_right">
+        <a href="#">오키나와 패키지 여행 후기-peak924님</a>
+        <p>
+          가족여행으로 오키나와를 가기로 계획을 세우고 있었는데 하늘투어에서
+          특가로 오키나와 패키지를 좋은 기회 좋은 가격에 구해 설레는 여행을
+          시작했습니다. 첫 가족 해외여행이라 걱정이었는데 가이드분께서
+          여행계획은 물론 그 이외의 추억들을 오랫동안 간직할 수 있게끔
+          노력해주시는 모습에...
+        </p>
+
+        <a href="#">동유럽 풀패키지 여행 후기-ullis3님</a>
+        <p>
+          전부터 혼자 유럽의 많은 곳곳들을 최대한 많이 돌아다니면서 아름다운
+          경치들을 만끽하며 멋진 사진들을 찍고 새로운 사람들을 만나는 것이 제
+          버킷리스트 였습니다. 다른 여행사들의 패키지들을 여러차례 찾아보았지만
+          항상 아쉬운 루트와 시간 분배가 제 결정을 미루게 했는데 이번에
+          하늘투어의 동유럽 여행 풀패키지를 보고 만족...
+        </p>
+
+        <a href="#">코타키나발루 여행 후기-나랑놀아134님</a>
+        <p>
+          선상에서 바라보는 바다와 노을은 말로 듣고 제가 예상했던 것 그
+          이상이였어요. 소중한 사람들과 해변에 앉아 이야기를 나누며 노을을 같이
+          바라볼 수 있다는 사실이 꿈만 같았어요 너무 값진 여행...
+        </p>
+        <div class="more_review">
+          <a href="#"> > 더 많은 여행후기 보러가기</a>
         </div>
+      </div>
     </div>
     <div class="section5">
-        <h1>떠나자, 하나만 믿고! 🧳</h1>
-            <div class="section5_wrapper">
-                <div class="blog">
-                    <p class="sub-t">GET ABOUT</p>
-                    <p class="blog_content">"오사카, 그날의 분위기" <br>
-                    어느 골목길, 우연히 마주한 찻 집 🍵
-                    세월의 흔적 그대로인 <br>예스러운 거리
-                    차가운 맥주 한 잔과 음식, 그리고 이야기​
-                    그날의 분위기에 따라 즐기는 그대로의 오사카
-                    </p>
-                </div>
+      <h1>떠나자, 하나만 믿고! 🧳</h1>
+      <div class="section5_wrapper">
+        <div class="blog">
+          <p class="sub-t">GET ABOUT</p>
+          <p class="blog_content">
+            "오사카, 그날의 분위기" <br />
+            어느 골목길, 우연히 마주한 찻 집 🍵 세월의 흔적 그대로인 예스러운
+            거리! 차가운 맥주 한 잔과 음식, 그리고 이야기.​ 그 날의 분위기에
+            따라 즐기는 그대로의 오사카
+          </p>
+        </div>
 
-                <div class="video">
-                    <p class="sub-t">VIDEO</p>
-                    <iframe width="340" height="218" src="https://www.youtube.com/embed/o3ge6l7lFRE" title="여행을 이루는 하나하나가 다 여행이니까│하나투어 ‘모든 여행편’ 떠나자, 하나만 믿고!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="video_content">떠나자, 하나로! 🧳​<br>
-                    항공도 ✈ 호텔도 🛌 액티비티도🎈<br>
-                    여행을 이루는 하나하나 다 여행이니까<br>
-                    모든 여행 하나만 믿고 가면 돼!​<br>
-                    하나에 다 있으니까!​</p>
-                </div>
+        <div class="video">
+          <p class="sub-t">VIDEO</p>
+          <iframe
+            width="340"
+            height="218"
+            src="https://www.youtube.com/embed/o3ge6l7lFRE"
+            title="여행을 이루는 하나하나가 다 여행이니까│하나투어 ‘모든 여행편’ 떠나자, 하나만 믿고!"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p class="video_content">
+            떠나자, 하나로! 🧳​<br />
+            항공도 ✈ 호텔도 🛌 액티비티도🎈<br />
+            여행을 이루는 하나하나 다 여행이니까<br />
+            모든 여행 하나만 믿고 가면 돼!​<br />
+            하나에 다 있으니까!​
+          </p>
+        </div>
 
-                <div class="sns">
-                        <p class="sub-t">SNS</p>
-                        <img src="images/인스타후보4.jpg" alt="instagram_pict" width="400px" height="230px">
-                    
-                        <div class="sns_content">
-                            <div class="s_b_icons">
-                                <i class="fa-solid fa-heart" class="fa-heart"></i>
-                                <i class="fa-regular fa-comment"></i>
-                                <i class="fa-regular fa-paper-plane"></i>
-                            </div>
-                            <div class="bookmark"><i class="fa-regular fa-bookmark"></i></div>
-                            
-                            <p> 좋아요 2,751개 <br>
-                                #풀패키지 #힐링여행 #여유로운 #휴가 
-                            </p>
-                            <p> nayune2014_ 헐 너무 힐링이다ㅠㅠ <br>
-                             risa.kim88 ♥ ♥ ♥ ♥ <br>
-                             heal_nolybam 오길 백번 잘했어~!~!~!
-                            </p>
-                        </div>
-                </div>    
+        <div class="sns">
+          <p class="sub-t">SNS</p>
+          <img
+            src="images/인스타후보4.jpg"
+            alt="instagram_pict"
+            width="400px"
+            height="230px"
+          />
+
+          <div class="sns_content">
+            <div class="s_b_icons">
+              <i class="fa-solid fa-heart" class="fa-heart"></i>
+              <i class="fa-regular fa-comment"></i>
+              <i class="fa-regular fa-paper-plane"></i>
             </div>
+            <div class="bookmark"><i class="fa-regular fa-bookmark"></i></div>
+
+            <p>
+              좋아요 2,751개 <br />
+              #풀패키지 #힐링여행 #여유로운 #휴가
+            </p>
+            <p>
+              nayune2014_ 헐 너무 힐링이다ㅠㅠ <br />
+              risa.kim88 ♥ ♥ ♥ ♥ <br />
+              heal_nolybam 오길 백번 잘했어~!~!~!
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="topbutton">
-        <a href="#">
-            <img src="images/airplane2.png" alt="로고탑버튼">
-            <span>TOP</span>
-        </a>
+      <a href="#">
+        <img src="images/airplane2.png" alt="로고탑버튼" />
+        <span>TOP</span>
+      </a>
     </div>
     <footer>
-        <div class="footer_outbox">
-            <div class="footer_inbox">
-                <div class="footer_call">
-                    <p>하늘투어 <br>고객센터</p>
-                    <span>1577-1234</span>
-                    <p>해외 항공권 <br>문의</p>
-                    <span>1899-9981</span><br>
-                    <a href="#">ARS 상담번호 안내></a>
-                </div>
-                <div class="footer_condition">
-                    <ul>
-                        <li><a href="">회사소개</a> |</li>
-                        <li><a href="">이용약관</a> |</li>
-                        <li><a href=""><strong>개인정보처리방침</strong></a> |</li>
-                        <li><a href="">여행약관</a> |</li>
-                        <li><a href="">해외여행자보험</a> |</li>
-                        <li><a href="">마케팅제휴</a> |</li>
-                        <li><a href="">공식인증예약센터 검색</a></li>
-                    </ul>
-                </div>
-                <div class="footer_warning">
-                    <p>
-                        ※ 코로나 바이러스19로 인한 근무 시간 축소로주말 및 야간 상담 서비스가 임시 중단 됩니다.(상담 가능 시간: <strong><span style="color: rgb(126, 126, 126);">평일9:00~18:00</span></strong>) <br>
-                        ※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.<br>
-                        ※ 하나투어는 개별 항공권, 단품 및 일부 여행상품에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당상품의 거래정보 및 거래등에 대해 책임을 지지 않습니다.
-                    </p>
-                </div>
-                <div class="footer_address">
-                    <p>
-                        - (주) 하늘투어대표 : 안예원,이혜연,이수인 | 주소 : (03161) 인천광역시 남동구 구월동 5길 41 <br>
-                        사업자등록번호 : 102-81-39440 | 사업자정보확인통신판매업신고번호 : 남동01-1806호<br>
-                        관광사업자 등록번호 : 제1993-000006호 | 개인정보 보호책임자 : 홀롤롤 <br>
-                        영업보증보험 : 22억 1천만원 | 가입팩스: 02-734-0392 | 이메일 : 15771233@hanultour.com
-                    </p>
-                </div>
-                <div class="footer_icons">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
+      <div class="footer_outbox">
+        <div class="footer_inbox">
+          <div class="footer_call">
+            <p>하늘투어 <br />고객센터</p>
+            <span>1577-1234</span>
+            <p>해외 항공권 <br />문의</p>
+            <span>1899-9981</span><br />
+            <a href="#">ARS 상담번호 안내></a>
+          </div>
+          <div class="footer_condition">
+            <ul>
+              <li><a href="">회사소개</a> |</li>
+              <li><a href="">이용약관</a> |</li>
+              <li>
+                <a href=""><strong>개인정보처리방침</strong></a> |
+              </li>
+              <li><a href="">여행약관</a> |</li>
+              <li><a href="">해외여행자보험</a> |</li>
+              <li><a href="">마케팅제휴</a> |</li>
+              <li><a href="">공식인증예약센터 검색</a></li>
+            </ul>
+          </div>
+          <div class="footer_warning">
+            <p>
+              ※ 코로나 바이러스19로 인한 근무 시간 축소로주말 및 야간 상담
+              서비스가 임시 중단 됩니다.(상담 가능 시간:
+              <strong
+                ><span style="color: rgb(126, 126, 126)"
+                  >평일9:00~18:00</span
+                ></strong
+              >) <br />
+              ※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를
+              받습니다.<br />
+              ※ 하나투어는 개별 항공권, 단품 및 일부 여행상품에 대하여
+              통신판매중개자로서 통신판매의 당사자가 아니며 해당상품의 거래정보
+              및 거래등에 대해 책임을 지지 않습니다.
+            </p>
+          </div>
+          <div class="footer_address">
+            <p>
+              - (주) 하늘투어대표 : 안예원,이혜연,이수인 | 주소 : (03161)
+              인천광역시 남동구 구월동 5길 41 <br />
+              사업자등록번호 : 102-81-39440 | 사업자정보확인통신판매업신고번호 :
+              남동01-1806호<br />
+              관광사업자 등록번호 : 제1993-000006호 | 개인정보 보호책임자 :
+              홀롤롤 <br />
+              영업보증보험 : 22억 1천만원 | 가입팩스: 02-734-0392 | 이메일 :
+              15771233@hanultour.com
+            </p>
+          </div>
+          <div class="footer_icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
